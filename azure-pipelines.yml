@@ -29,6 +29,7 @@ steps:
 
 - script: |
     which go
+    go env
     go version
     go get -v -t -d ./...
     if [ -f Gopkg.toml ]; then
